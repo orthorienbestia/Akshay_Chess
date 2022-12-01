@@ -14,16 +14,19 @@ public abstract class IPiece : MonoBehaviour
 
     public abstract IEnumerable<Vector2Int> GetAllPossibleMovements();
 
-    protected List<Vector2Int> GetPath(int row, int column, int step, int rowInc, int colInc)
+    protected List<Vector2Int> GetPath(int row, int col, int steps, int deltaRow, int deltaCol)
     {
         var result = new List<Vector2Int>() { };
-        row += rowInc;
-        column += colInc;
+        row += deltaRow;
+        col += deltaCol;
+        var cell = new Vector2Int(row, col);
 
-        if ((step <= 0) || (row < 0 || row > 7 || column < 0 || column > 7)) return result;
-        var cell = new Vector2Int(row, column);
-        if (ChessBoardPlacementHandler.Instance.GetAllPiecesPositions().Contains(cell)) return result;
-        result = GetPath(row, column, --step, rowInc, colInc);
+        if ((steps <= 0) || // Check if all steps are over
+        (row < 0 || row > 7 || col < 0 || col > 7) || // Check if position is inside the board
+        ChessBoardPlacementHandler.Instance.GetAllPiecesPositions().Contains(cell) // Check if path is obstructed by any piece
+        ) return result;
+
+        result = GetPath(row, col, --steps, deltaRow, deltaCol);
         result.Add(cell);
         return result;
     }
