@@ -7,9 +7,15 @@ public abstract class IPiece : MonoBehaviour
     [SerializeField] public int row, column;
 
     public Vector2Int Position => new Vector2Int(row, column);
-    protected virtual void Start()
+
+    public void UpdateVisualPosition()
     {
         transform.position = ChessBoardPlacementHandler.Instance.GetTile(row, column).transform.position;
+    }
+
+    protected virtual void Start()
+    {
+        UpdateVisualPosition();
     }
 
     public abstract IEnumerable<Vector2Int> GetAllPossibleMovements();

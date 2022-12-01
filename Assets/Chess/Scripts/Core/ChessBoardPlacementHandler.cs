@@ -14,7 +14,20 @@ public sealed class ChessBoardPlacementHandler : MonoBehaviour
 
     internal static ChessBoardPlacementHandler Instance;
 
+    #region Akshay's Code
     [SerializeField] private IPiece[] _pieces;
+
+    internal List<Vector2Int> GetAllPiecesPositions() => _pieces.Select(piece => piece.Position).ToList();
+
+    [ContextMenu("Update All Piece Positions")]
+    void UpdateAllPiecePositions()
+    {
+        foreach (var piece in _pieces)
+        {
+            piece.UpdateVisualPosition();
+        }
+    }
+    #endregion
 
 
     private void Awake()
@@ -76,7 +89,7 @@ public sealed class ChessBoardPlacementHandler : MonoBehaviour
         }
     }
 
-    internal List<Vector2Int> GetAllPiecesPositions() => _pieces.Select(piece => piece.Position).ToList();
+
 
     #region Highlight Testing
 
