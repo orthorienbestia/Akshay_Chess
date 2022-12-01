@@ -821,8 +821,8 @@ MonoBehaviour:
   - {fileID: 1342563080}
   - {fileID: 755527378}
   - {fileID: 60290584}
-  - {fileID: 354243242}
-  - {fileID: 1285433207}
+  - {fileID: 354243241}
+  - {fileID: 1285433206}
   - {fileID: 436799129}
   - {fileID: 1723691869}
   - {fileID: 309589167}
@@ -1487,8 +1487,8 @@ GameObject:
   m_Component:
   - component: {fileID: 354243239}
   - component: {fileID: 354243240}
-  - component: {fileID: 354243242}
   - component: {fileID: 354243243}
+  - component: {fileID: 354243241}
   m_Layer: 0
   m_Name: Bishop
   m_TagString: Untagged
@@ -1561,7 +1561,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &354243242
+--- !u!114 &354243241
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1570,7 +1570,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 354243238}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d2281a05e08228e5967ef0cf59a2522, type: 3}
+  m_Script: {fileID: 11500000, guid: 73c51fb2c206b18e49d5a6b8cfc4541b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   row: 0
@@ -3640,8 +3640,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1285433204}
   - component: {fileID: 1285433205}
-  - component: {fileID: 1285433207}
   - component: {fileID: 1285433208}
+  - component: {fileID: 1285433206}
   m_Layer: 0
   m_Name: Bishop
   m_TagString: Untagged
@@ -3714,7 +3714,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1285433207
+--- !u!114 &1285433206
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3723,10 +3723,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1285433203}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d2281a05e08228e5967ef0cf59a2522, type: 3}
+  m_Script: {fileID: 11500000, guid: 73c51fb2c206b18e49d5a6b8cfc4541b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  row: 0
+  row: 4
   column: 5
 --- !u!61 &1285433208
 BoxCollider2D:
