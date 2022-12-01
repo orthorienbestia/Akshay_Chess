@@ -3,15 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 using Chess.Scripts.Core;
 
-[RequireComponent(typeof(ChessPlayerPlacementHandler))]
 public abstract class IPiece : MonoBehaviour
 {
-    ChessPlayerPlacementHandler _placementHandler;
-    public Vector2Int Position => new Vector2Int(_placementHandler.row, _placementHandler.column);
-    protected virtual void Awake()
+    [SerializeField] public int row, column;
+
+    public Vector2Int Position => new Vector2Int(row, column);
+    protected virtual void Start()
     {
-        _placementHandler = GetComponent<ChessPlayerPlacementHandler>();
+        transform.position = ChessBoardPlacementHandler.Instance.GetTile(row, column).transform.position;
     }
+
     protected abstract List<Vector2Int> GetAllMovements();
     public abstract List<Vector2Int> GetAllPossibleMovements();
 }

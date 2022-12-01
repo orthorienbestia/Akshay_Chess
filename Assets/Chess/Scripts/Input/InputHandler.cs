@@ -16,7 +16,7 @@ public class InputHandler : MonoBehaviour
                 //Select stage    
                 if (piece)
                 {
-                    Debug.Log("Tapped: " + piece.gameObject.name + "  " + piece.Position);
+                    HandleTap(piece);
                 }
             }
         }
@@ -25,5 +25,9 @@ public class InputHandler : MonoBehaviour
     private void HandleTap(IPiece piece)
     {
         ChessBoardPlacementHandler.Instance.ClearHighlights();
+        foreach (var pos in piece.GetAllPossibleMovements())
+        {
+            ChessBoardPlacementHandler.Instance.Highlight(pos.x, pos.y);
+        }
     }
 }

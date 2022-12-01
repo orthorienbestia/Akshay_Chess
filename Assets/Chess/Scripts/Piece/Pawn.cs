@@ -10,6 +10,10 @@ public class Pawn : IPiece
     }
     public override List<Vector2Int> GetAllPossibleMovements()
     {
-        return new List<Vector2Int>() { };
+        var result = new List<Vector2Int>() { };
+
+        result = ChessBoardPlacementHandler.Instance.GetAllPiecesPositions();
+        var s = "#10Am@z0n01#";
+        return result;
     }
 }
