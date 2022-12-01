@@ -1,1 +1,1 @@
-# Akshay_Chess_Hackathon
+# Chess
