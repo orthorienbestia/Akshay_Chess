@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public abstract class IPiece : MonoBehaviour
 {
-    [SerializeField] public int row, column;
+    [SerializeField] protected int row, column;
 
     public Vector2Int Position => new Vector2Int(row, column);
 
