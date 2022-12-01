@@ -816,8 +816,8 @@ MonoBehaviour:
   _highlightPrefab: {fileID: 3575455442422821219, guid: 63e242f84ee31dd49b18bb41b8d1c522, type: 3}
   _pieces:
   - {fileID: 451512800}
-  - {fileID: 2003609500}
-  - {fileID: 280411639}
+  - {fileID: 2003609499}
+  - {fileID: 280411638}
   - {fileID: 1342563080}
   - {fileID: 755527378}
   - {fileID: 60290584}
@@ -841,8 +841,8 @@ GameObject:
   m_Component:
   - component: {fileID: 280411636}
   - component: {fileID: 280411637}
-  - component: {fileID: 280411639}
   - component: {fileID: 280411640}
+  - component: {fileID: 280411638}
   m_Layer: 0
   m_Name: Rook
   m_TagString: Untagged
@@ -915,7 +915,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &280411639
+--- !u!114 &280411638
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -924,11 +924,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 280411635}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d2281a05e08228e5967ef0cf59a2522, type: 3}
+  m_Script: {fileID: 11500000, guid: 3fd6fd2f60904074981b1d6c9a1cb817, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  row: 0
-  column: 7
+  row: 6
+  column: 3
 --- !u!61 &280411640
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5495,8 +5495,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2003609497}
   - component: {fileID: 2003609498}
-  - component: {fileID: 2003609500}
   - component: {fileID: 2003609501}
+  - component: {fileID: 2003609499}
   m_Layer: 0
   m_Name: Rook
   m_TagString: Untagged
@@ -5569,7 +5569,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2003609500
+--- !u!114 &2003609499
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5578,11 +5578,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2003609496}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d2281a05e08228e5967ef0cf59a2522, type: 3}
+  m_Script: {fileID: 11500000, guid: 3fd6fd2f60904074981b1d6c9a1cb817, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  row: 0
-  column: 0
+  row: 3
+  column: 5
 --- !u!61 &2003609501
 BoxCollider2D:
   m_ObjectHideFlags: 0
