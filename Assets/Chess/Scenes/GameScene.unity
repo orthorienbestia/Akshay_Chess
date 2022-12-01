@@ -818,8 +818,8 @@ MonoBehaviour:
   - {fileID: 451512800}
   - {fileID: 2003609499}
   - {fileID: 280411638}
-  - {fileID: 1342563080}
-  - {fileID: 755527378}
+  - {fileID: 1342563079}
+  - {fileID: 755527377}
   - {fileID: 60290584}
   - {fileID: 354243241}
   - {fileID: 1285433206}
@@ -2799,8 +2799,8 @@ GameObject:
   m_Component:
   - component: {fileID: 755527375}
   - component: {fileID: 755527376}
-  - component: {fileID: 755527378}
   - component: {fileID: 755527379}
+  - component: {fileID: 755527377}
   m_Layer: 0
   m_Name: Knight
   m_TagString: Untagged
@@ -2873,7 +2873,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &755527378
+--- !u!114 &755527377
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2882,10 +2882,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 755527374}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d2281a05e08228e5967ef0cf59a2522, type: 3}
+  m_Script: {fileID: 11500000, guid: a3c41fa0eb22b90eb997a83265a42b4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  row: 0
+  row: 2
   column: 6
 --- !u!61 &755527379
 BoxCollider2D:
@@ -3898,8 +3898,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1342563077}
   - component: {fileID: 1342563078}
-  - component: {fileID: 1342563080}
   - component: {fileID: 1342563081}
+  - component: {fileID: 1342563079}
   m_Layer: 0
   m_Name: Knight
   m_TagString: Untagged
@@ -3972,7 +3972,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1342563080
+--- !u!114 &1342563079
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3981,7 +3981,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1342563076}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d2281a05e08228e5967ef0cf59a2522, type: 3}
+  m_Script: {fileID: 11500000, guid: a3c41fa0eb22b90eb997a83265a42b4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   row: 0
