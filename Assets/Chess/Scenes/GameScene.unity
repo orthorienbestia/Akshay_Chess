@@ -815,7 +815,7 @@ MonoBehaviour:
   - {fileID: 209010543}
   _highlightPrefab: {fileID: 3575455442422821219, guid: 63e242f84ee31dd49b18bb41b8d1c522, type: 3}
   _pieces:
-  - {fileID: 451512800}
+  - {fileID: 451512799}
   - {fileID: 2003609499}
   - {fileID: 280411638}
   - {fileID: 1342563079}
@@ -2261,8 +2261,8 @@ GameObject:
   m_Component:
   - component: {fileID: 451512797}
   - component: {fileID: 451512798}
-  - component: {fileID: 451512800}
   - component: {fileID: 451512801}
+  - component: {fileID: 451512799}
   m_Layer: 0
   m_Name: King
   m_TagString: Untagged
@@ -2335,7 +2335,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &451512800
+--- !u!114 &451512799
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2344,11 +2344,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 451512796}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d2281a05e08228e5967ef0cf59a2522, type: 3}
+  m_Script: {fileID: 11500000, guid: 1554d2cb35b0880cba1a40d8a3185b5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  row: 0
-  column: 3
+  row: 5
+  column: 1
 --- !u!61 &451512801
 BoxCollider2D:
   m_ObjectHideFlags: 0
