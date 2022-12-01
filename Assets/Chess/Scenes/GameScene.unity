@@ -243,8 +243,8 @@ GameObject:
   m_Component:
   - component: {fileID: 60290582}
   - component: {fileID: 60290583}
-  - component: {fileID: 60290585}
   - component: {fileID: 60290586}
+  - component: {fileID: 60290584}
   m_Layer: 0
   m_Name: Queen
   m_TagString: Untagged
@@ -317,7 +317,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &60290585
+--- !u!114 &60290584
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -326,11 +326,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 60290581}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d2281a05e08228e5967ef0cf59a2522, type: 3}
+  m_Script: {fileID: 11500000, guid: fbaa546894feb060eaea1c3a3fcfb343, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  row: 0
-  column: 4
+  row: 3
+  column: 3
 --- !u!61 &60290586
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -820,7 +820,7 @@ MonoBehaviour:
   - {fileID: 280411639}
   - {fileID: 1342563080}
   - {fileID: 755527378}
-  - {fileID: 60290585}
+  - {fileID: 60290584}
   - {fileID: 354243242}
   - {fileID: 1285433207}
   - {fileID: 436799129}
@@ -3401,7 +3401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d2281a05e08228e5967ef0cf59a2522, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  row: 1
+  row: 4
   column: 3
 --- !u!61 &1126575670
 BoxCollider2D:

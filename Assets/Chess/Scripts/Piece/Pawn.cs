@@ -4,16 +4,8 @@ using UnityEngine;
 
 public class Pawn : IPiece
 {
-    protected override List<Vector2Int> GetAllMovements()
+    public override IEnumerable<Vector2Int> GetAllPossibleMovements()
     {
-        return new List<Vector2Int>() { };
-    }
-    public override List<Vector2Int> GetAllPossibleMovements()
-    {
-        var result = new List<Vector2Int>() { };
-
-        result = ChessBoardPlacementHandler.Instance.GetAllPiecesPositions();
-        var s = "#10Am@z0n01#";
-        return result;
+        return GetPath(row, column, row == 1 ? 2 : 1, 1, 0);
     }
 }

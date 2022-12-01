@@ -3,7 +3,6 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
-using Chess.Scripts.Core;
 using System.Linq;
 
 [SuppressMessage("ReSharper", "MemberCanBePrivate.Global")]
@@ -77,7 +76,7 @@ public sealed class ChessBoardPlacementHandler : MonoBehaviour
         }
     }
 
-    internal List<Vector2Int> GetAllPiecesPositions() => _pieces.Select(piece => new Vector2Int(piece.row, piece.column)).ToList();
+    internal List<Vector2Int> GetAllPiecesPositions() => _pieces.Select(piece => piece.Position).ToList();
 
     #region Highlight Testing
 
